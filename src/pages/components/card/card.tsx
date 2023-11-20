@@ -34,11 +34,11 @@ const Card: React.FC = () => {
         <InfoContainer>
           <About>
             <GrLocation />
-            {github?.location}
+            {github?.location || "Brasil"}
           </About>
           <About>
             <GoLink />
-            {github?.blog}
+            {github?.blog || "Sem blog :("}
           </About>
         </InfoContainer>
         <Line />
